@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="formDiv">
+      <h1>Employee Form</h1>
+      <form>
+        <input
+          type="text"
+          class="input"
+          id="employeeName"
+          placeholder="Enter your name"
+          required
+        />
+        <input
+          type="email"
+          class="input"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+        <input
+          type="password"
+          class="input"
+          id="password"
+          placeholder="Password"
+          required
+        />
+
+        <input
+          type="text"
+          class="input"
+          id="companyName"
+          placeholder="Enter your Company"
+          required
+        />
+
+        <select class="input" id="departmentName">
+          <option value="Select">Select</option>
+          <option value="Admin">Admin</option>
+          <option value="Marketing">Marketing</option>
+          <option value="Sales">Sales</option>
+          <option value="Production">Production</option>
+          <option value="Legal">Legal</option>
+        </select>
+
+        <button class="loginBtn" onclick="addEmployee(event)">
+          Add Employee
+        </button>
+        <a href="./index.html">logout</a>
+      </form>
+    </div>
+    <div>
+      <h3>Show Data</h3>
+      <table>
+        <tr>
+          <th>Campony Name</th>
+          <th>Employee Name</th>
+          <th>Department</th>
+        </tr>
+        <tr>
+          <td>Test Company</td>
+          <td>Ahsin</td>
+          <td>Admin</td>
+        </tr>
+      </table>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+      <div class="formDiv">
+        <h1>Signup Form</h1>
+      <form >
+        <input
+          type="text"
+          class="input"
+          id="companyName"
+          placeholder="Enter your Company"
+          required
+        />
+        <input
+          type="text"
+          class="input"
+          id="companyDescription"
+          placeholder="Company Description"
+          required
+        />
+        <input
+          type="text"
+          class="input"
+          id="employeeName"
+          placeholder="Enter your name"
+          required
+        />
+        <input
+          type="email"
+          class="input"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+        <input type="password" class="input" id="password"  placeholder="Password" required />
+        <button class="loginBtn" onclick="registerForm(event)">Signup</button>
+      </form>
+      <div class="singUp">
+        <p class="signLink">
+          Have an account?
+          <a href="./index.html" class="signLink">SignIn</a>
+        </p>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
